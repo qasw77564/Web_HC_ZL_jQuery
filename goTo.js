@@ -3,6 +3,10 @@ $("*").each(function (index, element) {
     $(this).click(function (e) { 
         // 取得被點選元素的屬性：data-gt-target
         var target = $(this).attr("data-gt-target");
-        console.log(target);
+        var duration = $(this).attr("data-gt-duration");
+        var offset = $(this).attr("data-gt-offset");
+        console.log("目標："+target);
+        console.log("持續時間:"+duration);
+        console.log("距離"+offset);
     })
 });
