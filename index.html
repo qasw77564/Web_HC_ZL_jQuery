@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+
+<body id="top">
     <nav>
-        <span>連結1</span>
-        <span>連結2</span>
-        <span>連結3</span>
+        <!-- target 目標 -->
+        <!-- duration 時間 -->
+        <!-- offset 位移 -->
+        <span data-gt-target="#box1" data-gt-duration="1000" data-gt-offset="0">連結 1</span>
+        <span data-gt-target="#box2" data-gt-duration="1500" data-gt-offset="200">連結 2</span>
+        <span data-gt-target="#box3" data-gt-duration="2000" data-gt-offset="0">連結 3</span>
     </nav>
 
-    <section>區塊1</section>
-    <section>區塊2</section>
-    <section>區塊3</section>
+    <section id="box1">區塊 1</section>
+    <section id="box2">區塊 2</section>
+    <section id="box3">區塊 3</section>
 
-
-
-
-
+    <img src="./arrow.png" alt="回到頂端" id="toTop" data-gt-target="#top" data-gt-duration="1500" data-gt-offset="0">
 
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- myJS -->
+    <!-- 前往元素 js -->
     <script src="./goTo.js"></script>
 </body>
+
 </html>
